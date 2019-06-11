@@ -1,0 +1,16 @@
+jQuery.fn.equalHeight = function() {
+    var maxHeight = 0;
+    return this.each(function(index, box) {
+        var boxHeight = jQuery(box).height();
+        maxHeight = Math.max(maxHeight, boxHeight);
+    }).height(maxHeight);
+}
+
+jQuery(document).ready(function() {
+    jQuery('.su-column-inner>.leader-heading').equalHeight();
+});
+
+jQuery(window).resize(function(){
+    jQuery('.su-column-inner>.leader-heading').css('height','auto');
+    jQuery('.su-column-inner>.leader-heading').equalHeight();
+});
