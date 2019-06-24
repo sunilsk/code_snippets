@@ -7,10 +7,10 @@ jQuery.fn.equalHeight = function() {
 }
 
 jQuery(document).ready(function() {
-    jQuery('.su-column-inner>.leader-heading').equalHeight();
+    jQuery('.column requires euql height').equalHeight();
 });
 
 jQuery(window).resize(function(){
-    jQuery('.su-column-inner>.leader-heading').css('height','auto');
-    jQuery('.su-column-inner>.leader-heading').equalHeight();
+    jQuery('.column requires euql height').css('height','auto');
+    jQuery('.column requires euql height').equalHeight();
 });
